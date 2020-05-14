@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prescription/Evolution</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ul,
+        li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .papper {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .header .inner__mebr {
+            display: grid;
+            grid-template-areas:
+                "logo address";
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .inner__mebr img {
+            grid-area: "logo"
+        }
+
+        .mebr__address {
+            grid-area: "address";
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-size: 0.85em;
+            color: blue;
+        }
+
+        .user__details {
+            display: grid;
+            grid-template-areas:
+                "user mebr atestado";
+            align-items: center;
+        }
+
+        .user__details div.user {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user__details div.user div {
+            color: blue
+        }
+
+        .user__details div.user span {
+            color: rgb(26, 149, 113)
+        }
+
+        .user__details div.user img {
+            width: 68px;
+            align-self: center;
+            border-radius: 50%;
+            padding: 5px;
+            margin-right: 10px;
+            background-color: #3bd43b;
+        }
+
+        .user__details div.user__mebr {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            color: rgb(26, 149, 113);
+        }
+
+        .user__details div.user__mebr p {
+            background-color: RGBA(26, 149, 113, 1);
+            color: #fff;
+            border-radius: 250px;
+            padding: 5px 0;
+        }
+
+        .user__details div.user__atestado {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 0.85em;
+        }
+
+        .user__details div.user__atestado span {
+            color: rgb(26, 149, 113);
+        }
+
+        .list__item {
+            margin: 20px;
+            display: flex;
+            position: relative;
+        }
+
+        .list__item:before {
+            position: absolute;
+            content: '';
+            top: 30px;
+            left: 15px;
+            width: 1px;
+            height: calc(100% - 10px);
+            background-color: rgb(26, 149, 113);
+        }
+
+        .list__item div.image img {
+            max-width: 30px;
+            max-height: 30px;
+            margin-right: 20px;
+        }
+
+        section.evolution ul li div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.evolution h2 {
+            align-self: flex-start;
+            font-size: 1.1em;
+            line-height: 1em;
+            margin-bottom: 5px;
+            color: rgb(26, 149, 113);
+        }
+
+        section.evolution p {
+            line-height: 1.2em;
+            font-weight: normal;
+            font-size: 0.85em;
+            color: #4a4a4a
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 500px;
+            margin-top: 50px;
+        }
+
+        footer img {
+            width: 200x;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        footer p {
+            font-size: 0.75em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="papper">
+        <header class="header">
+            <div class="inner__mebr">
+                <img src="img/logomarca-mebr.png" alt="Logo mebr">
+                <div class="mebr__address">
+                    <p>CNPJ: 00.000.000/0001</p>
+                    <p>Rua bicalho dias, 25</p>
+                    <p>São Luiz - Belo Horizonte</p>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="user__details">
+            <div class="user">
+                <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="User">
+                <div>
+                    <p>Maria Souza Aguia</p>
+                    <p>38 Anos e 10 dias</p>
+                    <span>Feminino</span>
+                </div>
+            </div>
+            <div class="user__mebr">
+                <p>N° Mebr: 000194mb</p>
+                <span>Data: 13/01 - Hora: 09:00</span>
+            </div>
+            <div class="user__atestado">
+                <span>Atestado</span>
+                <p>Dr. Marcos Santos Agual Matos</p>
+                <p>CRM: 0001 UF: MG</p>
+            </div>
+        </section>
+
+
+        <section class="evolution">
+            <ul class="list">
+                <li class="list__item">
+                    <div class="image">
+                        <img src="img/user.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Queixa do Paciente</h2>
+                        <p>Aqui a queixa do paciente</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="image">
+                        <img src="img/shield.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Prescrição / Evolução</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a, voluptate velit totam ab mollitia quas dolor atque iusto quos incidunt libero, voluptas rerum est sunt impedit nostrum nemo neque! </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a, voluptate velit totam ab mollitia quas dolor atque iusto quos incidunt libero, voluptas rerum est sunt impedit nostrum nemo neque! </p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="image">
+                        <img src="img/hourglass.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Diagnósticos</h2>
+                        <p>CID 10 - Cefaleia g44.2</p>
+                        <p>CID 10 - Cefaleia g44.2</p>
+                        <p>CID 10 - Cefaleia g44.2</p>
+
+                        <p>CID 10 - Cefaleia g44.2</p>
+
+                        <p>CID 10 - Cefaleia g44.2</p>
+
+                        <p>CID 10 - Cefaleia g44.2</p>
+
+                        <p>CID 10 - Cefaleia g44.2</p>
+
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="image">
+                        <img src="img/wallet.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Prescrição de Médicamentos</h2>
+                        <p><b>Oral:</b> 1 Cefalium 300, comprimido de 12/12 por 5 dias</p>
+                        <p><b>Oral:</b> 1 Cefalium 300, comprimido de 12/12 por 5 dias</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="image">
+                        <img class="image" src="img/dropper.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Solitação de Exames</h2>
+                        <p><b>Oral:</b> 1 Cefalium 300, comprimido de 12/12 por 5 dias</p>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="image">
+                        <img src="img/user-1.png" alt="">
+                    </div>
+                    <div>
+                        <h2>Id profissional</h2>
+                        <p>Indicado para um dermatologista presencial. </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <img src="img/icp-brasil-logo.png" alt="">
+            <div>
+                <p>Assinatura verificada</p>
+                <p>Signatário: Dr Luis Henrique Leonardo Pereira - 11548/SC</p>
+                <p>Localização: Balneário Camboriú/SC</p>
+                <p>Certificado gerado por: Digital Sign Certificadora</p>
+                <p>Motivo: Prescrição Eletrônica</p>
+                <p>Horário: 09/01/2020 às 16:29:27</p>
+                <p>Hashcode: 12jks8934ksaf9932das34dsf</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
