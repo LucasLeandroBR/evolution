@@ -5,13 +5,14 @@
     <title>Prescription/Evolution</title>
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 
-      * {
+      *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
       }
 
       ul,
@@ -126,7 +127,6 @@
         left: 15px;
         width: 1px;
         height: calc(100% - 10px);
-        background-color: rgb(26, 149, 113);
       }
 
       .list__item div.image img {
@@ -157,25 +157,21 @@
         color: #4a4a4a;
       }
 
+      .clausula {
+        margin-top: 20px;
+        text-align: center;
+      }
+
       footer {
-        display: -webkit-box;
         display: flex;
-        -webkit-box-pack: flex-start;
+        justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        max-width: 500px;
-        margin-top: 50px;
+        margin: 20px 0;
       }
-
       footer img {
-        width: 200x;
-        height: 50px;
-        margin-right: 20px;
-      }
-
-      footer p {
-        font-size: 0.75em;
-      }
+        height: 80px;
+        margin: 0 5px
+      } 
     </style>
   </head>
 
@@ -289,24 +285,19 @@
               <img src="img/user-1.png" alt="" />
             </div>
             <div>
-              <h2>Id profissional</h2>
+              <h2>Encaminhamento profissional</h2>
               <p>Indicado para um dermatologista presencial.</p>
             </div>
           </li>
         </ul>
       </section>
 
+      <div class="clausula">"Documento assinado de acordo com a ICP-Brasil, MP 2.200-2/2001, Resolução CFM 1821/2007, no sistema certificado FENACOM|CD n° XXX-Y, por <b>{{ sign.signatario }}</b> , CPF <b>{{ sign.signatario_cpf }}</b>, às <time timestamp=""> <b>{{ sign.signature_time }}</b></time>, Estado da assinatura: <b>{{ sign.signature_uf }}</b> "</div>
+
       <footer>
-        <img src="img/icp-brasil-logo.png" alt="" />
-        <div>
-          <p>Assinatura verificada</p>
-          <p>Signatário: Dr Luis Henrique Leonardo Pereira - 11548/SC</p>
-          <p>Localização: Balneário Camboriú/SC</p>
-          <p>Certificado gerado por: Digital Sign Certificadora</p>
-          <p>Motivo: Prescrição Eletrônica</p>
-          <p>Horário: 09/01/2020 às 16:29:27</p>
-          <p>Hashcode: 12jks8934ksaf9932das34dsf</p>
-        </div>
+        <img src="img/republica-federativa-do-brasil-brasao.png" alt="">
+        <img src="img/logo-icpbrasil.png" alt="">
+        <img src="img/logo-fenacon.jpg" alt="">
       </footer>
     </div>
   </body>
